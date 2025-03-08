@@ -50,8 +50,8 @@ export const Testimonials = () => {
       link: "https://twitter.com/NoahLikesPMMP/status/1729114062334939145",
       author: {
         name: <Author href="https://twitter.com/NoahLikesPMMP">AusiPlayz</Author>,
-        title: <Title href="https://pycmc.eu">Developer @PyCMC</Title>,
-        image: "https://pbs.twimg.com/profile_images/1631197721011843072/FHLjmtF9_400x400.png",
+        title: <Title href="https://discord.gg/bl4ckunity">Owner of Bl4ckUnity</Title>,
+        image: "https://pbs.twimg.com/profile_images/1894457091571552256/6i1YDzlK_400x400.jpg",
       },
     }
   ];
