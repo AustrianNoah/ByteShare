@@ -22,6 +22,7 @@ const steps: {
       <Link
         href="https://console.upstash.com/redis"
         className="flex items-center justify-center w-full gap-2 px-4 py-2 text-sm text-center transition-all duration-150 rounded text-zinc-800 hover:text-zinc-100 bg-zinc-200 hover:bg-transparent ring-1 ring-zinc-100"
+        target="_blank"
       >
         <span>Create Database</span>
         <ArrowTopRightOnSquareIcon className="w-4 h-4" />
