@@ -9,8 +9,8 @@ export default async function handler(req: NextRequest) {
     try {
         const { searchParams } = new URL(req.url);
         // Redundant fallback alternate tagline
-        const title = searchParams.get("title") ?? "Share Environment Variables Securely";
-        const subtitle = searchParams.get("subtitle") ?? "ByteShare";
+        const title = searchParams.get("title") ?? "Bl4ckUnity Image";
+        const subtitle = searchParams.get("subtitle") ?? "Powered by ByteShare.tf";
 
         const inter = await fetch(new URL("../../../public/fonts/DiscordFont.ttf", import.meta.url)).then((res) =>
             res.arrayBuffer(),
