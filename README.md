@@ -49,7 +49,7 @@ button below to clone and deploy:
 <tr>
 <td>
   <img width="1000" height="0">
-  <a href="https://upstash.com/?utm_source=envshare" >
+  <a href="https://upstash.com/?utm_source=ByteShare" >
   <img src="https://raw.githubusercontent.com/upstash/sponsorship/master/redis.png" alt="Upstash" width="260" align="right">
   </a>
 <h3>Upstash: Serverless Database for Redis</h3>
@@ -60,7 +60,7 @@ button below to clone and deploy:
     <li>Built-in REST API designed for serverless and edge functions</li>
   </ul>
 
-[Start for free in 30 seconds!](https://upstash.com/?utm_source=envshare)
+[Start for free in 30 seconds!](https://upstash.com/?utm_source=ByteShare)
 
 </td>
 </tr>
@@ -93,18 +93,18 @@ This endpoint is only meant to store **already encrypted** secrets. The
 encrypted secrets are stored in plain text.
 
 ```sh-session
-$ curl -XPOST -s https://envshare.dev/api/v1/secret -d "already-encrypted-secret"
+$ curl -XPOST -s https://byteshare.tf/api/v1/secret -d "already-encrypted-secret"
 ```
 
 You can add optional headers to configure the ttl and number of reads.
 
 ```sh-session
-$ curl -XPOST -s https://envshare.dev/api/v1/secret -d "already-encrypted-secret" -H "envshare-ttl: 3600" -H "envshare-reads: 10"
+$ curl -XPOST -s https://byteshare.tf/api/v1/secret -d "already-encrypted-secret" -H "byteshare-ttl: 3600" -H "byteshare-reads: 10"
 ```
 
-- Omitting the `envshare-ttl` header will set a default of 30 days. Disable the
-  ttl by setting it to 0. (`envshare-ttl: 0`)
-- Omitting the `envshare-reads` header will simply disable it and allow reading
+- Omitting the `byteshare-ttl` header will set a default of 30 days. Disable the
+  ttl by setting it to 0. (`byteshare-ttl: 0`)
+- Omitting the `byteshare-reads` header will simply disable it and allow reading
   for an unlimited number of times.
 
 This endpoint returns a JSON response with the secret id:
@@ -116,7 +116,7 @@ This endpoint returns a JSON response with the secret id:
     "ttl": 86400,
     "reads": 2,
     "expiresAt": "2023-01-19T20:47:28.383Z",
-    "url": "http://envshare.dev/api/v1/secret/HdPbXgpvUvNk43oxSdK97u"
+    "url": "http://byteshare.tf/api/v1/secret/HdPbXgpvUvNk43oxSdK97u"
   }
 }
 ```
@@ -126,7 +126,7 @@ This endpoint returns a JSON response with the secret id:
 You need an id to retrieve a secret. The id is returned when you store a secret.
 
 ```sh-session
-$ curl -s https://envshare.dev/api/v1/secret/HdPbXgpvUvNk43oxSdK97u
+$ curl -s https://byteshare.tf/api/v1/secret/HdPbXgpvUvNk43oxSdK97u
 ```
 
 ```json
