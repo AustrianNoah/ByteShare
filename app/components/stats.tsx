@@ -15,11 +15,11 @@ export const Stats = asyncComponent(async () => {
 
   const stats = [
     {
-      label: "Dokumente verschlüsselt",
+      label: "Documents Encrypted",
       value: writes,
     },
     {
-      label: "Dokumente entschlüsselt",
+      label: "Documents Decrypted",
       value: reads,
     },
   ] satisfies { label: string; value: number }[];
